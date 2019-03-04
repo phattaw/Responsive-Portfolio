@@ -7,7 +7,7 @@ html, body {
     margin: 0;
     padding: 0;
     background-image: url('../images/circles-light.png');
-    height: 100%;
+    height: 1000px;
     width: 100%;
 }
 
@@ -17,15 +17,14 @@ html, body {
 }
 
 header {
-    position: fixed;
     font-family: 'Georgia', Times, Times New Roman, serif;
     border-color: #cccccc;
     border-width: 10px;
     background-color: #ffffff;
     margin-bottom: 25px;
+    height: 103px;
     width: 960px;
     padding-left: 150px;
-    z-index: 2;
 }
 
 h1 {
@@ -45,11 +44,14 @@ h1 {
     background-color: white;
     color: #4aaaa5;
     font-size: 28px;
-    margin: 10px 25px 10px 25px;
+    padding: 10px 0px 10px 25px;
     border-bottom-color: #777777;
     border-width: 2px;
     border-bottom-style: solid;
+}
 
+#bio-image {
+    padding: 0px 0px 0px 25px
 }
 
 .links {
@@ -67,7 +69,7 @@ h1 {
 #main-bio {
     padding:0;
     float: left;
-    margin-top: 128px 0 0 150px;
+    margin-left:   150px;
     background-color: #ffffff;
     width: 960px;
 }
@@ -75,10 +77,9 @@ h1 {
 footer {
     background-color: #666666;
     height: 50px;
-    margin-top: -100px;
+    margin-top: -50px;
     border-top: 8px solid #4aaaa5;
     text-align: center;    
-    clear: both;
 }
 
 h6 {
@@ -111,7 +112,6 @@ h6 {
     margin-left: 5px;
     line-height: 1.5;
     width: 50%;
-    clear: both;
 }
 
 #mail_form {
@@ -136,37 +136,30 @@ h2 {
     border-color: #4aaaa5;
 }
 
+
 .portfolio_img {
     clear: left;
     float: left;
     margin: 0px 25px 25px 25px;
-    position: static;
-    z-index: 1;
 }
-
 .portfolio_img2 {
     float: left;
     clear: right;
-    position: static;
-    z-index: 1;
 }
 
 .img_container {
     position: relative;
     text-align: center;
     color: white;
-    z-index: 1;
   }
 
 #portfolio {
     padding:0;
     float: left;
-    margin: 128px 5% 25px 150px;
+    margin-left:   150px;
     background-color: #ffffff;
     width: 960px;
-    height: 80%;
-    z-index: 1;
-    position: static;
+    height: 400px;
 }
 
 .centered {
@@ -178,6 +171,8 @@ h2 {
     background-color: #4aaaa5;
     width: 100%
   }
+
+
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 640px) {
@@ -206,8 +201,9 @@ h2 {
     }
 
     #portfolio {
-        margin: 20px 10% 25px 10%;
+        margin: 20px 10% 75px 10%;
         width: 80%;
+        height: 800px;
     }
 
     .links {
@@ -238,6 +234,23 @@ h2 {
         width: 80%;
     }
 
+    .portfolio_img {
+        clear: both;
+        margin: 0;
+    }
+
+    .portfolio_img2 {
+        clear: both;
+    }
+
+    footer {
+        background-color: #666666;
+        height: 50px;
+        margin-top: -50px;
+        border-top: 8px solid #4aaaa5;
+        text-align: center;    
+    }
+    
 }
     
 /* Medium devices (landscape tablets, 768px and up) */
